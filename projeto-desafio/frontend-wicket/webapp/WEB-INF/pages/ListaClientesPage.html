@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Clientes</title>
+</head>
+<body>
+    <h1>Clientes Cadastrados</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Documento</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr wicket:id="clientes">
+                <td><span wicket:id="documento"></span></td>
+                <td><span wicket:id="nome"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
