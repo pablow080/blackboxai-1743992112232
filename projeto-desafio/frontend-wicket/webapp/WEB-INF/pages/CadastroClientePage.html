@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title>
+    <style>
+        .hidden { display: none; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Novo Cliente</h1>
+    
+    <form wicket:id="form">
+        <div>
+            <label>Tipo de Pessoa:</label>
+            <div wicket:id="tipoPessoa">
+                <input type="radio" wicket:id="fisica"> Pessoa Física
+                <input type="radio" wicket:id="juridica"> Pessoa Jurídica
+            </div>
+        </div>
+        
+        <div wicket:id="fisicaFields">
+            <div>
+                <label>Nome:</label>
+                <input type="text" wicket:id="nome">
+                <span wicket:id="nomeError" class="error"></span>
+            </div>
+            <div>
+                <label>CPF:</label>
+                <input type="text" wicket:id="documento">
+                <span wicket:id="documentoError" class="error"></span>
+            </div>
+        </div>
+        
+        <div wicket:id="juridicaFields">
+            <div>
+                <label>Razão Social:</label>
+                <input type="text" wicket:id="razaoSocial">
+                <span wicket:id="razaoSocialError" class="error"></span>
+            </div>
+            <div>
+                <label>CNPJ:</label>
+                <input type="text" wicket:id="documentoJuridico">
+                <span wicket:id="documentoJuridicoError" class="error"></span>
+            </div>
+        </div>
+        
+        <button type="submit" wicket:id="salvar">Salvar</button>
+    </form>
+    
+    <script>
+        // Script para mostrar/ocultar campos conforme tipo de pessoa
+        document.querySelectorAll(input[name=tipoPessoa]).forEach(radio => {
+            radio.addEventListener(change, function() {
+                const isFisica = this.value === "FISICA";
+                document.querySelector([wicket\:id=fisicaFields]).style.display = isFisica ? "block" : "none";
+                document.querySelector([wicket\:id=juridicaFields]).style.display = isFisica ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>
