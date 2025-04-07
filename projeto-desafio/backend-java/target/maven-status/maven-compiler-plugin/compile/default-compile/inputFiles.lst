@@ -1,0 +1,12 @@
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/controller/CadastroClientePage.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/dao/IClienteDAO.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/config/SpringConfig.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/service/ClienteServiceImpl.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/exception/ClienteExistenteException.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/controller/ListaClientesPage.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/exception/ClienteNaoEncontradoException.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/service/IClienteService.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/dao/ClienteDAOImpl.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/controller/BasePage.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/model/Cliente.java
+/project/sandbox/user-workspace/projeto-desafio/backend-java/src/main/java/model/Endereco.java
